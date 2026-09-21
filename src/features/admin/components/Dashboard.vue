@@ -136,13 +136,18 @@ const saveProject = async () => {
   alert('Proyecto guardado correctamente en local');
   currentProject.value = null;
 };
+
+const logout = () => {
+  localStorage.removeItem('local-admin-token');
+  window.location.reload();
+};
 </script>
 
 <template>
   <div class="dashboard">
     <header class="topbar">
       <h1>Panel de Configuración Local</h1>
-      <button class="logout-btn" @click="() => { localStorage.removeItem('local-admin-token'); window.location.reload() }">Cerrar Sesión</button>
+      <button class="logout-btn" @click="logout">Cerrar Sesión</button>
     </header>
 
     <div class="main-content">
@@ -163,7 +168,7 @@ const saveProject = async () => {
           
           <div v-if="loading">Cargando...</div>
           <div v-else class="trans-list">
-            <template v-for="(val, key) in translations" :key="key">
+            <template v-for="(_, key) in translations" :key="key">
               <div class="form-group" v-if="!['social-mail', 'social-github', 'social-linkedin', 'social-x', 'whatsapp-number', 'whatsapp-message'].includes(String(key))">
                 <label>{{ key }}</label>
                 <textarea v-model="translations[key]" rows="2"></textarea>

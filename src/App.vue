@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
-import { ref, computed } from "vue";
+import { computed } from "vue";
 import Admin from "./features/admin/components/Admin.vue";
 import Privacy from "./features/pages/components/Privacy.vue";
 import Legal from "./features/pages/components/Legal.vue";

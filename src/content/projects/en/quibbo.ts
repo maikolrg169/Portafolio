@@ -13,7 +13,7 @@ export default {
   title: "CRM de Tienda e inventario online",
   live: "https://tiendajhon.netlify.app/",
   theme: "light",
-  tags: ["three", "node", "Next-js", "redis", "postgresql"],
+  tags: ["three", "node", "next", "redis", "postgresql"],
   videoBorder: true,
   description:
     "Mi Tienda es una solución web integral (PWA) de punto de venta (POS) y gestión de inventario diseñada específicamente para comercios que operan en entornos multimoneda. La plataforma optimiza la facturación rápida, el control de existencias en tiempo real y la conciliación financiera diaria, resolviendo la fricción operativa que genera la fluctuación cambiaria entre divisas (USD/USDT) y moneda local (Bolívares).   ",

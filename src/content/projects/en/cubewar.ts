@@ -12,7 +12,7 @@ import type { ProjectContent } from "../../types";
 export default {
   title: "CRM de cursos online",
   theme: "dark",
-  tags: ["Next.js", "websockets", "redis"],
+  tags: ["next", "websockets", "redis"],
   videoBorder: false,
   live: "https://cursos-ashen.vercel.app/",
   description:
