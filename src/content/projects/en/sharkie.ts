@@ -11,7 +11,7 @@ import type { ProjectContent } from "../../types";
 export default {
   title: "Gestión de Correspondencia",
   theme: "light",
-  tags: ["Filament", "laravel", "css"],
+  tags: ["Filament", "laravel", "MySQL"],
   live: "",
   source: "https://github.com/davidhckh/sharkie-game",
   description:

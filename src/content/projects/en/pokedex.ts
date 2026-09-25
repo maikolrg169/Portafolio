@@ -10,7 +10,7 @@ import type { ProjectContent } from "../../types";
 export default {
   title: "seocreator",
   theme: "light",
-  tags: ["javascript", "html", "css"],
+  tags: ["React", "html", "css"],
   live: "https://seocreator.app/",
   source: "https://github.com/davidhckh/pokedex",
   videoBorder: true,
