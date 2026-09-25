@@ -32,5 +32,10 @@
   "social-linkedin": "https://www.linkedin.com/in/michael-rodríguez-midriel",
   "social-x": "https://www.instagram.com/michael_hrmz/",
   "whatsapp-number": "+584129330660",
-  "whatsapp-message": "Hola, vi tu portafolio y me gustaría hablar contigo."
+  "whatsapp-message": "Hola, vi tu portafolio y me gustaría hablar contigo.",
+  "skill-1": "Next.js & WebGL",
+  "skill-2": "Laravel & Filament",
+  "skill-3": "React & Vue",
+  "skill-4": "Kubernetes & Redis",
+  "skill-5": "MySQL & PostgreSQL"
 }

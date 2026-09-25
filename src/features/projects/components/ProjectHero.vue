@@ -106,14 +106,16 @@ watch(projectId, () => {
   }
 
   &-title {
-    font-size: var(--font-size-title-lg);
+    font-size: clamp(32px, 8vw, var(--font-size-title-md));
     color: var(--color-text-400);
     line-height: var(--line-height-title);
     transform: translateY(0%);
     animation: project-hero-title-visible 0.5s var(--ease-smooth);
+    word-break: keep-all;
+    overflow-wrap: normal;
 
     @include mixins.mq("md") {
-      font-size: var(--font-size-title-xl);
+      font-size: clamp(32px, 4.5vw, var(--font-size-title-lg));
     }
 
     @keyframes project-hero-title-visible {
@@ -165,7 +167,7 @@ watch(projectId, () => {
     }
 
     @include mixins.mq("lg") {
-      grid-column: 2 / 6;
+      grid-column: 2 / 7;
     }
   }
 }

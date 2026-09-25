@@ -3,15 +3,24 @@ import { computed } from "vue";
 import { tagLabels, type TagVariant } from "./tagVariants";
 
 const props = defineProps<{
-  variant: TagVariant;
+  variant: TagVariant | string;
 }>();
 
-const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
+const label = computed(() => {
+  return props.variant in tagLabels 
+    ? tagLabels[props.variant as TagVariant] 
+    : props.variant;
+});
+
+const classes = computed(() => {
+  const isKnown = props.variant in tagLabels;
+  return ["tag", isKnown ? `tag-variant-${props.variant.toLowerCase()}` : "tag-variant-default"];
+});
 </script>
 
 <template>
   <div :class="classes">
-    <p class="tag-copy">{{ tagLabels[props.variant] }}</p>
+    <p class="tag-copy">{{ label }}</p>
   </div>
 </template>
 
@@ -27,6 +36,12 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
   }
 
   &-variant {
+    &-default {
+      color: var(--color-text-400);
+      border-color: var(--color-grayscale-400);
+      background-color: transparent;
+    }
+
     &-three {
       background-color: #ed9c55;
       color: #492708;

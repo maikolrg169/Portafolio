@@ -26,5 +26,10 @@
   "source-code": "Quellcode",
   "switch-to-project": "Zum Projekt {project} wechseln",
   "version": "Version",
-  "view-project": "Projekt ansehen"
+  "view-project": "Projekt ansehen",
+  "skill-1": "Three.js & WebGL",
+  "skill-2": "Node.js & WebSockets",
+  "skill-3": "React & Vue",
+  "skill-4": "Kubernetes & Redis",
+  "skill-5": "Echtzeit-Mehrspieler"
 }

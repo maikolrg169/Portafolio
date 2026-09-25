@@ -20,10 +20,10 @@ export default [
     description: "Sistema POS, Gestión de Inventario y Control Multimoneda",
   },
   {
-    title: "Sharkie",
+    title: "Gestión de Correspondencia",
     slug: "sharkie",
     thumbnail: thumbnailSharkie,
-    description: "2D-Abenteuerspiel",
+    description: "Web para la gestión de correspondencia publica o privada",
   },
   {
     title: "Gruas expres",

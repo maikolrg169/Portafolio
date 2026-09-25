@@ -9,20 +9,20 @@ import sharkie4 from "../../../assets/images/projects/sharkie/sharkie-4.webp";
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Sharkie",
+  title: "Gestión de Correspondencia",
   theme: "light",
-  tags: ["javascript", "html", "css"],
-  live: "https://sharkie.david-hckh.com/",
+  tags: ["Filament", "laravel", "css"],
+  live: "",
   source: "https://github.com/davidhckh/sharkie-game",
   description:
-    "Sharkie is a 2D underwater adventure game built with vanilla JavaScript and HTML5 Canvas.<br/><br/>The project is structured around object-oriented programming principles, featuring custom classes for entities, enemies, and game systems, alongside smooth animations, combat mechanics, and layered parallax backgrounds.",
+    "Gestión de Correspondencia es una plataforma web integral desarrollada para centralizar, digitalizar y controlar el flujo de comunicaciones oficiales, documentos y trámites internos o externos en empresas e instituciones del sector público o privado. ",
   components: [
     {
       type: "media",
       props: {
         type: "video",
         src: videoSharkie,
-        caption: "Gameplay",
+        caption: "System live",
       },
     },
     {
@@ -30,8 +30,8 @@ export default {
       props: {
         type: "image",
         src: sharkie0,
-        alt: "Entities And Map Design",
-        caption: "Entities And Map Design",
+        alt: "Login",
+        caption: "Login",
       },
     },
     {
@@ -39,8 +39,8 @@ export default {
       props: {
         type: "image",
         src: sharkie1,
-        alt: "Boss Fight",
-        caption: "Boss Fight",
+        alt: "Inicio",
+        caption: "Inicio",
       },
     },
     {
@@ -48,8 +48,8 @@ export default {
       props: {
         type: "image",
         src: sharkie2,
-        alt: "Mission",
-        caption: "Mission",
+        alt: "Modulo principal",
+        caption: "Modulo principal",
       },
     },
     {
@@ -57,8 +57,8 @@ export default {
       props: {
         type: "image",
         src: sharkie3,
-        alt: "Victory Screen",
-        caption: "Victory Screen",
+        alt: "Añadir correspondencia",
+        caption: "Añadir correspondencia",
       },
     },
     {
@@ -66,8 +66,8 @@ export default {
       props: {
         type: "image",
         src: sharkie4,
-        alt: "Death Screen",
-        caption: "Death Screen",
+        alt: "Añadir departamento o ente",
+        caption: "Añadir departamento o ente",
       },
     },
   ],
