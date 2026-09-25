@@ -26,15 +26,15 @@ export default [
     description: "2D-Abenteuerspiel",
   },
   {
-    title: "WebGL Partikel",
+    title: "Gruas expres",
     slug: "particles",
     thumbnail: thumbnailParticles,
-    description: "Dynamische 3D Partikel",
+    description: "App web con CRM",
   },
   {
-    title: "Pokédex",
+    title: "seocreator",
     slug: "pokedex",
     thumbnail: thumbnailPokedex,
-    description: "Open-Source Lernprojekt",
+    description: "Plataforma de generacion de contenido con ia",
   },
 ] as const satisfies ProjectPreview[];

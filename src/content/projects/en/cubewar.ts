@@ -23,7 +23,7 @@ export default {
       props: {
         type: "video",
         src: videoCubeWar,
-        caption: "Gameplay",
+        caption: "System live",
       },
     },
     {

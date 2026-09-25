@@ -39,17 +39,7 @@ watch(projectId, () => {
           t("live-view")
         }}</Button>
       </Link>
-      <Link
-        v-if="content.source"
-        :href="content.source"
-        external
-        class="project-hero-button"
-        data-cursor="arrow-external"
-      >
-        <Button renderAs="div" variant="border" class="children-unclickable" data-hoversound="hover">{{
-          t("source-code")
-        }}</Button>
-      </Link>
+
     </div>
   </div>
 </template>

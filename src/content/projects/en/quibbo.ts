@@ -23,7 +23,7 @@ export default {
       props: {
         type: "video",
         src: videoQuibbo,
-        caption: "User Experience",
+        caption: "System live",
       },
     },
     {

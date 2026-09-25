@@ -7,20 +7,20 @@ import particles2 from "../../../assets/images/projects/particles/particles-2.we
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "WebGL Particles",
+  title: "Gruas expres",
   theme: "dark",
-  tags: ["ogl", "javascript", "glsl"],
-  live: "https://particles.david-hckh.com/",
+  tags: ["sveltekit", "typescript", "postgresql"],
+  live: "https://gruas-expres2-pi.vercel.app/",
   videoBorder: false,
   description:
-    "An experimental WebGL project built with OGL.js, animating particles through mathematical formulas and noise functions.<br/><br/>The particles transition smoothly between multiple 3D shapes that blend into one another.",
+    "Grúas Expres es una plataforma web moderna e integral diseñada para conectar a conductores en apuros con servicios de grúas locales de forma rápida, transparente y confiable. Actúa como un puente directo entre usuarios varados, conductores de grúas y administradores de servicio. ",
   components: [
     {
       type: "media",
       props: {
         type: "video",
         src: videoParticles,
-        caption: "Animated Particle System",
+        caption: "System live",
       },
     },
     {
@@ -28,8 +28,8 @@ export default {
       props: {
         type: "image",
         src: particles0,
-        alt: "Knot Shape",
-        caption: "Knot Shape",
+        alt: "Inicio",
+        caption: "Inicio",
       },
     },
     {
@@ -37,8 +37,8 @@ export default {
       props: {
         type: "image",
         src: particles1,
-        alt: "Donut Shape",
-        caption: "Donut Shape",
+        alt: "Panel admin",
+        caption: "Panel admin",
       },
     },
     {
@@ -46,8 +46,8 @@ export default {
       props: {
         type: "image",
         src: particles2,
-        alt: "Sphere Shape",
-        caption: "Sphere Shape",
+        alt: "Asignación automática",
+        caption: "Asignación automática",
       },
     },
   ],

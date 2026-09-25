@@ -91,6 +91,16 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
       background-color: #95630e;
       color: white;
     }
+
+    &-sveltekit {
+      background-color: #ff3e00;
+      color: white;
+    }
+
+    &-typescript {
+      background-color: #3178c6;
+      color: white;
+    }
   }
 }
 </style>

@@ -257,7 +257,8 @@ const logout = () => {
               </div>
               
               <div class="form-group" style="margin-top: 2rem;">
-                <label>Video del Proyecto (.mp4)</label>
+                <label>Etiqueta del Video y Archivo (.mp4)</label>
+                <input type="text" v-model="currentProject.videoCaption" placeholder="Ej. Animated Particle System" style="margin-bottom: 0.5rem;" />
                 <input type="file" accept="video/mp4" @change="handleVideoUpload" />
               </div>
 

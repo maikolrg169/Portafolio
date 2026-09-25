@@ -92,6 +92,13 @@ export default function cmsPlugin(): Plugin {
                    if (descInsideBlock) previewDescription = descInsideBlock[1];
                 }
 
+                let videoCaption = "";
+                const videoRegex = /type:\s*["']video["'][\s\S]*?caption:\s*["'](.*?)["']/;
+                const videoMatch = content.match(videoRegex);
+                if (videoMatch) {
+                   videoCaption = videoMatch[1];
+                }
+
                 return {
                   id,
                   title: titleMatch ? titleMatch[1] : "",
@@ -99,6 +106,7 @@ export default function cmsPlugin(): Plugin {
                   previewDescription,
                   live: liveMatch ? liveMatch[1] : "",
                   tags: tags,
+                  videoCaption,
                 };
               });
 
@@ -112,7 +120,7 @@ export default function cmsPlugin(): Plugin {
           // Projects POST
           if (req.url === "/api/admin/projects" && req.method === "POST") {
             try {
-              const { id, title, description, live, tags } = parsedBody;
+              const { id, title, description, live, tags, videoCaption } = parsedBody;
               const filePath = path.resolve(__dirname, `./src/content/projects/en/${id}.ts`);
               let content = fs.readFileSync(filePath, "utf-8");
               
@@ -138,6 +146,14 @@ export default function cmsPlugin(): Plugin {
                    content = content.replace(/tags:\s*\[.*?\]/, `tags: [${tagsString}]`);
                  } else {
                    content = content.replace(/(title:\s*["'].*?["'],)/, `$1\n  tags: [${tagsString}],`);
+                 }
+              }
+
+              // Replace video caption
+              if (videoCaption !== undefined) {
+                 const videoRegex = /(type:\s*["']video["'][\s\S]*?caption:\s*["'])(.*?)(["'])/;
+                 if (content.match(videoRegex)) {
+                   content = content.replace(videoRegex, `$1${videoCaption.replace(/"/g, '\\"')}$3`);
                  }
               }
 
