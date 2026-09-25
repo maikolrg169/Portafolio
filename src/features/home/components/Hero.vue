@@ -105,12 +105,12 @@ import AppearingText from "../../../components/AppearingText.vue";
   &-banner {
     position: absolute;
     bottom: 0;
-    right: -16px;
+    right: 24px;
     z-index: 10;
     transform: rotate(-5deg) translate(0, 65%);
 
     @include mixins.mq("sm") {
-      right: -24px;
+      right: -12px;
       transform: rotate(-5deg) translate(0, 70%);
     }
 
