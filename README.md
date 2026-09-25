@@ -1,43 +1,7 @@
-# Portfolio (2025)
+Portafolio (2026)
 
-Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).
+Sitio web de portafolio personal: casos de estudio de proyectos webs, demos ligeras de 3D y shaders, y textos bilingües (inglés y español).Desarrollado con Vue 3, TypeScript y Vite. Animaciones mediante GSAP y Lenis, 3D con three.js, audio con Howler. 
 
-Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
+GLSL se compila a través de vite-plugin-glsl.ScriptsComandoDescripciónnpm run devServidor de desarrollo en el puerto 3000 (strictPort) npm run buildvue-tsc y luego empaquetado para producción en dist/npm run previewServir localmente la versión de producciónnpm run typecheckSolo verificación de tipos (vue-tsc -b)ContenidoProyectos: src/content/projects/{en,de}/<slug>.ts — textos, etiquetas, multimedia, enlaces. 
 
-## Scripts
-
-| Command        | Description                          |
-| -------------- | ------------------------------------ |
-| `npm run dev`   | Dev server on port **3000** (`strictPort`) |
-| `npm run build` | `vue-tsc` then production bundle to `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run typecheck` | Typecheck only (`vue-tsc -b`) |
-
-## Content
-
-- **Projects**: `src/content/projects/{en,de}/<slug>.ts` — copy, tags, media, links. Slugs must align with `projectIds` in `src/content/projects/index.ts`.
-- **Previews / listing**: `src/content/projects/previews/`.
-- **Tags**: variants and labels live in `src/components/tagVariants.ts` (used by `Tag.vue` and content types).
-
-## Stack (high level)
-
-- Vue 3 (`<script setup>`), SCSS with shared mixins (`src/assets/styles/`)
-- i18n helpers under `src/i18n/`
-- WebGL / GLSL under `src/three/` where applicable
-
-## Credits & Attribution
-
-This project was created and designed by David Heckhoff.
-
-If you use this project or substantial parts of its source code as a base for your own portfolio or work, attribution must be preserved.
-
-Please keep:
-
-- existing credit comments in the source code
-- this attribution section in the README
-- a visible reference to the original project/repository in derivative works
-
-Original portfolio:
--> https://david-hckh.com
-
-Commercial reuse or redistribution of substantial portions of this project without permission is prohibited.
+Los slugs deben coincidir con projectIds en src/content/projects/index.ts.Vistas previas / listado: src/content/projects/previews/.Etiquetas: las variantes y textos se encuentran en src/components/tagVariants.ts (usados por Tag.vue y los tipos de contenido).Stack (nivel general)Vue 3 (<script setup>), SCSS con mixins compartidos (src/assets/styles/)Funciones auxiliares de i18n en src/i18n/WebGL / GLSL en src/three/ según aplique.
