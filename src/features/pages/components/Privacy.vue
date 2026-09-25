@@ -8,9 +8,15 @@ import Footer from "../../../components/Footer.vue";
     <div class="page-content">
       <h1>{{ t("privacy") }}</h1>
       <div class="prose">
-        <p>This is the privacy policy page. Edit this file to add your privacy policy content.</p>
-        <h2>Information We Collect</h2>
-        <p>...</p>
+        <p>Esta es la Política de Privacidad de mi portafolio. Tu privacidad es fundamental.</p>
+        <h2>Información que Recopilamos</h2>
+        <p>Este sitio no recopila información personal de los visitantes de forma automática, a excepción de los datos proporcionados voluntariamente si decides contactarme a través de mis redes sociales, correo electrónico o WhatsApp.</p>
+        <h2>Uso de la Información</h2>
+        <p>Cualquier dato de contacto que me proporciones será utilizado estrictamente para responder a tus consultas, discutir oportunidades de empleo o colaborar en proyectos. No compartiré ni venderé tu información a terceros.</p>
+        <h2>Cookies</h2>
+        <p>Este portafolio únicamente utiliza cookies locales estrictamente necesarias para el funcionamiento de la web (por ejemplo, para guardar tu preferencia de idioma). No utilizamos cookies de seguimiento, rastreadores ni recolectamos datos para análisis de mercado.</p>
+        <h2>Consentimiento</h2>
+        <p>Al utilizar y navegar en este sitio web, estás de acuerdo con nuestra Política de Privacidad y aceptas sus términos.</p>
       </div>
     </div>
     <Footer />
